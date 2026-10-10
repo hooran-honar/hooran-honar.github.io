@@ -10,6 +10,7 @@
 
 <style>
 *{box-sizing:border-box}
+
 :root{
   --navy:#2f4156;
   --teal:#567c8d;
@@ -19,7 +20,9 @@
   --text:#435361;
   --border:#dce5e9;
 }
+
 html{scroll-behavior:smooth}
+
 body{
   margin:0;
   font-family:Tahoma,Arial,sans-serif;
@@ -27,12 +30,15 @@ body{
   color:var(--navy);
   line-height:2;
 }
+
 a{color:inherit}
+
 header{
   background:var(--navy);
   color:white;
   padding:15px 5%;
 }
+
 .topbar{
   max-width:1200px;
   margin:auto;
@@ -42,98 +48,275 @@ header{
   gap:18px;
   flex-wrap:wrap;
 }
-.brand{display:flex;align-items:center;gap:12px}
-.brand img{
-  width:60px;height:60px;object-fit:contain;
-  background:white;border-radius:10px;padding:4px;
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
 }
-.brand-name{font-weight:bold;font-size:16px}
-.brand-subtitle{font-size:12px;color:var(--sky)}
-nav{display:flex;gap:15px;flex-wrap:wrap}
-nav a{font-size:13px;text-decoration:none}
+
+.brand img{
+  width:60px;
+  height:60px;
+  object-fit:contain;
+  background:white;
+  border-radius:10px;
+  padding:4px;
+}
+
+.brand-name{
+  font-weight:bold;
+  font-size:16px;
+}
+
+.brand-subtitle{
+  font-size:12px;
+  color:var(--sky);
+}
+
+nav{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+nav a{
+  font-size:13px;
+  text-decoration:none;
+}
+
 nav a:hover{color:var(--sky)}
+
 .hero{
   background:linear-gradient(135deg,#2f4156,#567c8d);
   color:white;
   padding:55px 6%;
 }
-.hero-inner{max-width:1050px;margin:auto}
-.eyebrow{color:var(--sky);font-size:13px;font-weight:bold}
-.hero h1{font-size:clamp(27px,4vw,42px);line-height:1.7;margin:12px 0}
-.hero p{font-size:15px;color:#edf3f6;max-width:800px}
+
+.hero-inner{
+  max-width:1050px;
+  margin:auto;
+}
+
+.eyebrow{
+  color:var(--sky);
+  font-size:13px;
+  font-weight:bold;
+}
+
+.hero h1{
+  font-size:clamp(27px,4vw,42px);
+  line-height:1.7;
+  margin:12px 0;
+}
+
+.hero p{
+  font-size:15px;
+  color:#edf3f6;
+  max-width:800px;
+}
+
 .btn{
   display:inline-block;
   text-decoration:none;
-  background:white;color:var(--navy);
-  border-radius:9px;padding:10px 18px;
-  font-weight:bold;font-size:13px;margin:7px 5px 0 0;
+  background:white;
+  color:var(--navy);
+  border-radius:9px;
+  padding:10px 18px;
+  font-weight:bold;
+  font-size:13px;
+  margin:7px 5px 0 0;
 }
-main{max-width:1200px;margin:auto;padding:20px}
+
+main{
+  max-width:1200px;
+  margin:auto;
+  padding:20px;
+}
+
 .notice{
-  background:white;border:1px solid var(--border);
-  border-radius:14px;padding:18px 22px;
-  margin:15px 0 25px;color:var(--text);font-size:13px;
+  background:white;
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:18px 22px;
+  margin:15px 0 25px;
+  color:var(--text);
+  font-size:13px;
 }
+
 .category-nav{
-  display:flex;flex-wrap:wrap;gap:9px;
-  justify-content:center;margin:20px 0 35px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:9px;
+  justify-content:center;
+  margin:20px 0 35px;
 }
+
 .category-nav a{
-  text-decoration:none;background:white;
-  border:1px solid var(--border);border-radius:30px;
-  padding:7px 13px;font-size:12px;
+  text-decoration:none;
+  background:white;
+  border:1px solid var(--border);
+  border-radius:30px;
+  padding:7px 13px;
+  font-size:12px;
 }
-.category-nav a:hover{background:var(--navy);color:white}
-.gallery-section{padding:28px 0;scroll-margin-top:15px}
-.section-head{text-align:center;margin-bottom:20px}
-.section-head h2{color:var(--teal);font-size:23px;margin:0 0 7px}
-.section-head p{color:var(--text);font-size:13px;max-width:800px;margin:auto}
+
+.category-nav a:hover{
+  background:var(--navy);
+  color:white;
+}
+
+.gallery-section{
+  padding:28px 0;
+  scroll-margin-top:15px;
+}
+
+.section-head{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.section-head h2{
+  color:var(--teal);
+  font-size:23px;
+  margin:0 0 7px;
+}
+
+.section-head p{
+  color:var(--text);
+  font-size:13px;
+  max-width:800px;
+  margin:auto;
+}
+
 .gallery{
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
+  align-items:start;
   gap:17px;
 }
+
 .photo-card{
-  background:white;border:1px solid var(--border);
-  border-radius:14px;overflow:hidden;
+  min-width:0;
+  background:white;
+  border:1px solid var(--border);
+  border-radius:14px;
+  overflow:hidden;
   box-shadow:0 5px 17px #2f41560b;
 }
+
 .photo-card img{
-  display:block;width:100%;height:235px;
-  object-fit:cover;background:#e4edf1;
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:420px;
+  object-fit:contain;
+  object-position:center;
+  background:#ffffff;
 }
-.photo-caption{padding:13px 15px}
-.photo-caption h3{font-size:15px;margin:0 0 4px}
-.photo-caption p{font-size:12px;color:var(--text);margin:0}
+
+.photo-caption{
+  padding:13px 15px;
+}
+
+.photo-caption h3{
+  font-size:15px;
+  margin:0 0 4px;
+}
+
+.photo-caption p{
+  font-size:12px;
+  color:var(--text);
+  margin:0;
+}
+
 .contact{
-  background:var(--navy);color:white;
-  text-align:center;border-radius:18px;
-  padding:30px 20px;margin:35px 0 20px;
+  background:var(--navy);
+  color:white;
+  text-align:center;
+  border-radius:18px;
+  padding:30px 20px;
+  margin:35px 0 20px;
   scroll-margin-top:20px;
 }
-.contact p{font-size:13px;color:#e5edf2}
-.phones{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:18px 0}
+
+.contact p{
+  font-size:13px;
+  color:#e5edf2;
+}
+
+.phones{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  justify-content:center;
+  margin:18px 0;
+}
+
 .phones a{
-  direction:ltr;text-decoration:none;color:white;
-  border:1px solid #ffffff70;border-radius:8px;
-  padding:7px 12px;font-size:13px;
+  direction:ltr;
+  text-decoration:none;
+  color:white;
+  border:1px solid #ffffff70;
+  border-radius:8px;
+  padding:7px 12px;
+  font-size:13px;
 }
+
 .contact .btn{margin:5px}
-.back{text-align:center;margin:22px}
-.back a{color:var(--teal);font-weight:bold;text-decoration:none}
-footer{background:#243447;color:#dce5eb;text-align:center;padding:20px;font-size:12px}
-@media(max-width:850px){
-  .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .photo-card img{height:220px}
+
+.back{
+  text-align:center;
+  margin:22px;
 }
+
+.back a{
+  color:var(--teal);
+  font-weight:bold;
+  text-decoration:none;
+}
+
+footer{
+  background:#243447;
+  color:#dce5eb;
+  text-align:center;
+  padding:20px;
+  font-size:12px;
+}
+
+@media(max-width:850px){
+  .gallery{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+}
+
 @media(max-width:540px){
-  .topbar,.brand{justify-content:center}
+  .topbar,.brand{
+    justify-content:center;
+  }
+
   .brand{width:100%}
-  nav{justify-content:center;gap:12px}
+
+  nav{
+    justify-content:center;
+    gap:12px;
+  }
+
   .hero{padding:35px 6%}
+
   main{padding:12px}
-  .gallery{grid-template-columns:1fr}
-  .photo-card img{height:auto;max-height:360px;aspect-ratio:4/3}
+
+  .gallery{
+    grid-template-columns:1fr;
+  }
+
+  .photo-card img{
+    width:100%;
+    height:auto;
+    max-height:none;
+    object-fit:contain;
+  }
+
   .section-head h2{font-size:20px}
 }
 </style>
@@ -150,6 +333,7 @@ footer{background:#243447;color:#dce5eb;text-align:center;padding:20px;font-size
         <div class="brand-subtitle">طراحی سفارشی، پارتیشن و مبلمان اداری</div>
       </div>
     </div>
+
     <nav>
       <a href="index.html">صفحه اصلی</a>
       <a href="design.html">خدمات طراحی</a>
@@ -163,7 +347,9 @@ footer{background:#243447;color:#dce5eb;text-align:center;padding:20px;font-size
 <section class="hero">
   <div class="hero-inner">
     <div class="eyebrow">گالری ایده‌ها و طراحی‌های سفارشی</div>
+
     <h1>طرح‌های خاص را فقط تماشا نکنید؛ آن‌ها را به واقعیت تبدیل کنید.</h1>
+
     <p>
       در هوران هنر ماندگار البرز، ایده‌های متفاوت برای فضاهای اداری
       بررسی می‌شوند تا با توجه به ابعاد واقعی، نیاز مجموعه و شرایط
@@ -171,6 +357,7 @@ footer{background:#243447;color:#dce5eb;text-align:center;padding:20px;font-size
       از پارتیشن‌های قوس‌دار و هندسه‌های پیچیده تا کانتر پذیرش،
       میز مدیریت، مبلمان و طراحی داخلی.
     </p>
+
     <a class="btn" href="#gallery-start">مشاهده گالری</a>
     <a class="btn" href="#contact">درخواست بررسی طرح</a>
   </div>
@@ -206,6 +393,7 @@ footer{background:#243447;color:#dce5eb;text-align:center;padding:20px;font-size
         و ارتفاع‌های متفاوت؛ با توجه به امکان ساخت و جزئیات نصب.
       </p>
     </div>
+
     <div class="gallery">
       <article class="photo-card"><img src="partition-curved-01.jpg.jpg" alt="نمونه پارتیشن قوس‌دار ۱" loading="lazy"><div class="photo-caption"><h3>پارتیشن قوس‌دار</h3><p>ایده‌ای برای تقسیم‌بندی نرم و متفاوت فضا</p></div></article>
       <article class="photo-card"><img src="partition-curved-02.jpg.jpg" alt="نمونه پارتیشن قوس‌دار ۲" loading="lazy"><div class="photo-caption"><h3>پارتیشن منحنی</h3><p>طرح سفارشی متناسب با معماری داخلی</p></div></article>
@@ -236,6 +424,7 @@ footer{background:#243447;color:#dce5eb;text-align:center;padding:20px;font-size
       <h2>کانتر پذیرش و پیشخوان‌های سفارشی</h2>
       <p>طراحی کانتر متناسب با هویت مجموعه، فضای ورودی، مسیر مراجعه‌کنندگان و نیازهای کاری.</p>
     </div>
+
     <div class="gallery">
       <article class="photo-card"><img src="reception-curved-01.jpg.jpg" alt="کانتر پذیرش منحنی ۱" loading="lazy"><div class="photo-caption"><h3>کانتر پذیرش منحنی</h3><p>فرم نرم برای ورودی‌های شاخص</p></div></article>
       <article class="photo-card"><img src="reception-curved-02.jpg.jpg" alt="کانتر پذیرش منحنی ۲" loading="lazy"><div class="photo-caption"><h3>پیشخوان قوس‌دار</h3><p>قابل بررسی برای ساخت سفارشی</p></div></article>
@@ -249,6 +438,7 @@ footer{background:#243447;color:#dce5eb;text-align:center;padding:20px;font-size
       <h2>میز مدیریت و مبلمان مدیریتی خاص</h2>
       <p>ایده‌هایی برای میز مدیریت مدرن، سفارشی و هماهنگ با فضای اتاق مدیریت.</p>
     </div>
+
     <div class="gallery">
       <article class="photo-card"><img src="executive-desk-modern-01.jpg.jpg" alt="میز مدیریت مدرن ۱" loading="lazy"><div class="photo-caption"><h3>میز مدیریت مدرن</h3><p>طراحی متناسب با فضای کار</p></div></article>
       <article class="photo-card"><img src="executive-desk-modern-02.jpg.jpg" alt="میز مدیریت مدرن ۲" loading="lazy"><div class="photo-caption"><h3>میز مدیریتی معاصر</h3><p>توجه به فرم و کاربری</p></div></article>
@@ -266,6 +456,7 @@ footer{background:#243447;color:#dce5eb;text-align:center;padding:20px;font-size
       <h2>میزهای کارگروهی و ایستگاه‌های کاری</h2>
       <p>برنامه‌ریزی چیدمان میزها با توجه به تعداد کارکنان، مسیرهای عبور، دسترسی‌ها و نظم محیط کار.</p>
     </div>
+
     <div class="gallery">
       <article class="photo-card"><img src="office-workstations-01.jpg.jpg" alt="ایستگاه کاری اداری ۱" loading="lazy"><div class="photo-caption"><h3>ایستگاه کاری مدرن</h3><p>برای استفاده بهینه از فضای اداری</p></div></article>
       <article class="photo-card"><img src="office-workstations-02.jpg.jpg" alt="ایستگاه کاری اداری ۲" loading="lazy"><div class="photo-caption"><h3>میزهای کار گروهی</h3><p>هماهنگی با تعداد کاربران</p></div></article>
@@ -281,6 +472,7 @@ footer{background:#243447;color:#dce5eb;text-align:center;padding:20px;font-size
       <h2>میز و اتاق کنفرانس</h2>
       <p>ایده‌های طراحی میز جلسه و فضای کنفرانس متناسب با ظرفیت، تجهیزات و سبک مجموعه.</p>
     </div>
+
     <div class="gallery">
       <article class="photo-card"><img src="conference-room-modern-01.jpg.jpg" alt="اتاق کنفرانس مدرن ۱" loading="lazy"><div class="photo-caption"><h3>اتاق کنفرانس مدرن</h3><p>هماهنگی میز، صندلی و فضای جلسه</p></div></article>
       <article class="photo-card"><img src="conference-room-modern-02.jpg.jpg" alt="اتاق کنفرانس مدرن ۲" loading="lazy"><div class="photo-caption"><h3>فضای جلسات اداری</h3><p>توجه به چیدمان و رفت‌وآمد</p></div></article>
@@ -299,6 +491,7 @@ footer{background:#243447;color:#dce5eb;text-align:center;padding:20px;font-size
       <h2>کمد، فایل و ذخیره‌سازی اداری</h2>
       <p>راهکارهای ذخیره‌سازی اسناد و وسایل، با توجه به فضای موجود و نیازهای کاری.</p>
     </div>
+
     <div class="gallery">
       <article class="photo-card"><img src="cabinet-office-modern-01.jpg.jpg" alt="کمد اداری مدرن ۱" loading="lazy"><div class="photo-caption"><h3>کمد اداری مدرن</h3><p>نظم‌دهی و استفاده بهتر از فضا</p></div></article>
       <article class="photo-card"><img src="cabinet-office-modern-02.jpg.jpg" alt="کمد اداری مدرن ۲" loading="lazy"><div class="photo-caption"><h3>کمد ذخیره‌سازی</h3><p>متناسب با نیاز مجموعه</p></div></article>
@@ -314,6 +507,7 @@ footer{background:#243447;color:#dce5eb;text-align:center;padding:20px;font-size
       <h2>مبلمان اداری، مبل مدیریتی و فضای انتظار</h2>
       <p>ایده‌هایی برای مبلمان اتاق مدیریت، فضای انتظار و بخش پذیرش.</p>
     </div>
+
     <div class="gallery">
       <article class="photo-card"><img src="sofa-office-modern-01.jpg.jpg" alt="مبل اداری مدرن" loading="lazy"><div class="photo-caption"><h3>مبل اداری مدرن</h3><p>مناسب فضاهای اداری معاصر</p></div></article>
       <article class="photo-card"><img src="sofa-executive-leather-01.jpg.jpg" alt="مبل مدیریتی چرمی" loading="lazy"><div class="photo-caption"><h3>مبل مدیریتی چرمی</h3><p>ایده‌ای برای اتاق مدیریت</p></div></article>
@@ -330,6 +524,7 @@ footer{background:#243447;color:#dce5eb;text-align:center;padding:20px;font-size
       <h2>پرده‌های اداری</h2>
       <p>انتخاب پرده با توجه به نور، حریم خصوصی، کاربری اتاق و هماهنگی با دکوراسیون.</p>
     </div>
+
     <div class="gallery">
       <article class="photo-card"><img src="curtain-office-modern-01.jpg.jpg" alt="پرده اداری مدرن ۱" loading="lazy"><div class="photo-caption"><h3>پرده اداری مدرن</h3><p>هماهنگی با فضای کاری</p></div></article>
       <article class="photo-card"><img src="curtain-office-modern-02.jpg.jpg" alt="پرده اداری مدرن ۲" loading="lazy"><div class="photo-caption"><h3>پرده برای اتاق اداری</h3><p>تنظیم نور و حفظ حریم</p></div></article>
@@ -344,6 +539,7 @@ footer{background:#243447;color:#dce5eb;text-align:center;padding:20px;font-size
       <h2>طراحی داخلی فضاهای اداری</h2>
       <p>هماهنگی چیدمان، پارتیشن، مبلمان و عناصر داخلی بر اساس کاربری و شرایط واقعی فضا.</p>
     </div>
+
     <div class="gallery">
       <article class="photo-card"><img src="interior-modern-office-01.jpg.jpg" alt="طراحی داخلی دفتر مدرن ۱" loading="lazy"><div class="photo-caption"><h3>طراحی داخلی دفتر مدرن</h3><p>چیدمان هماهنگ فضای اداری</p></div></article>
       <article class="photo-card"><img src="interior-modern-office-02.jpg.jpg" alt="طراحی داخلی دفتر مدرن ۲" loading="lazy"><div class="photo-caption"><h3>فضای کاری معاصر</h3><p>هماهنگی عناصر داخلی و مبلمان</p></div></article>
@@ -357,12 +553,14 @@ footer{background:#243447;color:#dce5eb;text-align:center;padding:20px;font-size
       اگر طرح خاصی دیده‌اید یا برای فضای اداری خود به راهکاری متفاوت
       نیاز دارید، برای بررسی اولیه و هماهنگی با هوران تماس بگیرید.
     </p>
+
     <div class="phones">
       <a href="tel:02191694592">021-91694592</a>
       <a href="tel:02634026300">026-34026300</a>
       <a href="tel:02634026400">026-34026400</a>
       <a href="tel:09013430117">0901-343-0117</a>
     </div>
+
     <a class="btn" href="tel:09013430117">تماس با کارشناس</a>
     <a class="btn" href="design.html">مشاهده خدمات طراحی</a>
   </section>
@@ -370,6 +568,7 @@ footer{background:#243447;color:#dce5eb;text-align:center;padding:20px;font-size
   <div class="back">
     <a href="index.html">← بازگشت به صفحه اصلی هوران</a>
   </div>
+
 </main>
 
 <footer>
