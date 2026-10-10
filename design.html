@@ -4,58 +4,666 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>طراحی و تجهیز اداری | هوران هنر ماندگار البرز</title>
+
+<title>طراحی و تجهیز فضاهای اداری | هوران هنر ماندگار البرز</title>
+<meta name="description" content="خدمات تخصصی طراحی داخلی، اندازه‌برداری، پارتیشن‌بندی و تجهیز فضاهای اداری با توجه به شرایط واقعی پروژه و الزامات اجرایی.">
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#f5efeb;color:#2f4156;line-height:1.9}
-header{background:#2f4156;color:white;text-align:center;padding:24px 16px}
-header img{width:95px;height:95px;object-fit:contain;border-radius:12px;background:white;padding:5px}
-h1{font-size:25px;margin:10px 0}
-main{max-width:950px;margin:28px auto;padding:0 16px}
-.hero{background:white;border-radius:18px;padding:25px;text-align:center;box-shadow:0 5px 20px #2f415615}
-h2{color:#567c8d}
-.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:15px;margin-top:22px}
-.item{background:white;border-radius:14px;padding:20px;border:1px solid #d7e0e5}
-.item h3{margin-top:0}
-.btn{display:inline-block;background:#567c8d;color:white;text-decoration:none;padding:11px 20px;border-radius:9px;margin-top:12px}
-.contact{margin-top:22px;background:#e4edf1;padding:20px;border-radius:14px;text-align:center}
-footer{text-align:center;padding:22px;color:#657783;font-size:13px}
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --navy: #2f4156;
+  --teal: #567c8d;
+  --sky: #c8d9e6;
+  --beige: #f5efeb;
+  --white: #ffffff;
+  --text: #435361;
+  --border: #dce5e9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  background: var(--beige);
+  color: var(--navy);
+  line-height: 2;
+}
+
+a {
+  color: inherit;
+}
+
+header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 16px 5%;
+}
+
+.topbar {
+  max-width: 1150px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.brand img {
+  width: 66px;
+  height: 66px;
+  object-fit: contain;
+  background: white;
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.brand-name {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.brand-subtitle {
+  font-size: 12px;
+  color: var(--sky);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 13px;
+  color: white;
+}
+
+nav a:hover {
+  color: var(--sky);
+}
+
+.hero {
+  background: linear-gradient(135deg, #2f4156, #567c8d);
+  color: white;
+  padding: 65px 6%;
+}
+
+.hero-inner {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 35px;
+}
+
+.eyebrow {
+  color: var(--sky);
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: clamp(27px, 4vw, 43px);
+  line-height: 1.65;
+  margin: 12px 0;
+}
+
+.hero p {
+  color: #edf3f6;
+  font-size: 15px;
+  max-width: 650px;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 370px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 3px solid #ffffff30;
+  box-shadow: 0 15px 35px #17263540;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 11px 20px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background: white;
+  color: var(--navy);
+}
+
+.btn-outline {
+  border: 1px solid #ffffffa0;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+main {
+  max-width: 1150px;
+  margin: auto;
+  padding: 15px 22px 40px;
+}
+
+section.content-section {
+  padding: 38px 0;
+  scroll-margin-top: 20px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.section-heading h2 {
+  color: var(--teal);
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.section-heading p {
+  color: var(--text);
+  font-size: 14px;
+  max-width: 760px;
+  margin: auto;
+}
+
+.intro-box {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 17px;
+  padding: 25px;
+  box-shadow: 0 7px 25px #2f41560b;
+}
+
+.intro-box p {
+  margin: 0;
+  color: var(--text);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 23px;
+  box-shadow: 0 5px 18px #2f41560a;
+}
+
+.card-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: #e4edf1;
+  color: var(--teal);
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.card h3 {
+  font-size: 17px;
+  margin: 12px 0 7px;
+}
+
+.card p {
+  color: var(--text);
+  font-size: 13px;
+  margin: 0;
+}
+
+.process {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.process-item {
+  background: white;
+  border-right: 4px solid var(--teal);
+  border-radius: 12px;
+  padding: 18px 20px;
+}
+
+.process-item h3 {
+  font-size: 15px;
+  margin: 0 0 5px;
+}
+
+.process-item p {
+  color: var(--text);
+  font-size: 13px;
+  margin: 0;
+}
+
+.special {
+  background: #e4edf1;
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.special h2 {
+  margin-top: 0;
+  color: var(--navy);
+}
+
+.special p {
+  color: var(--text);
+  font-size: 14px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 18px;
+}
+
+.tag {
+  background: white;
+  border: 1px solid #c9d9e1;
+  border-radius: 30px;
+  padding: 6px 13px;
+  font-size: 12px;
+}
+
+.contact {
+  background: var(--navy);
+  color: white;
+  border-radius: 19px;
+  padding: 32px 22px;
+  text-align: center;
+  margin-top: 30px;
+  scroll-margin-top: 20px;
+}
+
+.contact h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.contact p {
+  color: #e5edf2;
+  font-size: 14px;
+}
+
+.phone-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.phone-list a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #ffffff70;
+  border-radius: 9px;
+  padding: 8px 13px;
+  direction: ltr;
+  font-size: 14px;
+}
+
+.contact .btn {
+  background: white;
+  color: var(--navy);
+  margin: 5px;
+}
+
+.back-link {
+  text-align: center;
+  margin: 25px 0 5px;
+}
+
+.back-link a {
+  color: var(--teal);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer {
+  background: #243447;
+  color: #dce5eb;
+  text-align: center;
+  padding: 22px 15px;
+  font-size: 12px;
+}
+
+@media (max-width: 800px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 42px 6%;
+  }
+
+  .hero-image {
+    max-height: 300px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 540px) {
+  .topbar {
+    justify-content: center;
+  }
+
+  .brand {
+    width: 100%;
+    justify-content: center;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero h1 {
+    font-size: 27px;
+  }
+
+  .cards,
+  .process {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .section-heading h2 {
+    font-size: 22px;
+  }
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<img src="IMG_20260822_034356_286.jpg" alt="لوگوی هوران">
-<h1>هوران هنر ماندگار البرز</h1>
-<div>طراحی داخلی و تجهیز فضاهای اداری</div>
+  <div class="topbar">
+    <div class="brand">
+      <img src="IMG_20260822_034356_286.jpg" alt="لوگوی هوران هنر">
+      <div>
+        <div class="brand-name">هوران هنر ماندگار البرز</div>
+        <div class="brand-subtitle">طراحی، برنامه‌ریزی و تجهیز فضاهای اداری</div>
+      </div>
+    </div>
+
+    <nav>
+      <a href="index.html">صفحه اصلی</a>
+      <a href="#services">خدمات</a>
+      <a href="#process">روش کار</a>
+      <a href="#contact">تماس با هوران</a>
+    </nav>
+  </div>
 </header>
-<main>
+
 <section class="hero">
-<h2>فضای کاری حرفه‌ای، متناسب با نیاز شما</h2>
-<p>ارائه خدمات طراحی داخلی، پارتیشن اداری و مبلمان اداری با توجه به نیاز، فضای موجود و الزامات اجرایی پروژه.</p>
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">تخصص در جزئیات اجرایی پروژه‌های اداری</div>
+      <h1>از اندازه‌برداری دقیق تا اجرای حساب‌شده فضای اداری</h1>
+      <p>
+        هوران هنر ماندگار البرز با تکیه بر تجربه عملی در طراحی،
+        اندازه‌برداری، پارتیشن‌بندی و تجهیز فضاهای اداری،
+        نیازهای هر پروژه را بررسی می‌کند تا مسیر طراحی و اجرا
+        بر اساس شرایط واقعی محل شکل بگیرد.
+      </p>
+
+      <div class="actions">
+        <a class="btn btn-primary" href="#contact">درخواست مشاوره</a>
+        <a class="btn btn-outline" href="#process">آشنایی با روش کار</a>
+      </div>
+    </div>
+
+    <img class="hero-image"
+         src="Design.JPG"
+         alt="طراحی داخلی و مبلمان اداری هوران">
+  </div>
 </section>
-<section class="services">
-<div class="item">
-<h3>پارتیشن اداری</h3>
-<p>طراحی و اجرای پارتیشن متناسب با نقشه و نیاز مجموعه شما.</p>
-</div>
-<div class="item">
-<h3>مبلمان اداری</h3>
-<p>میز مدیریت، میز کارشناسی، کانتر پذیرش و تجهیزات اداری.</p>
-</div>
-<div class="item">
-<h3>طراحی داخلی</h3>
-<p>بررسی فضا، اندازه‌برداری و برنامه‌ریزی برای اجرای دقیق پروژه.</p>
-</div>
-</section>
-<section class="contact">
-<h2>برای مشاوره با هوران در ارتباط باشید</h2>
-<p>تلفن دفتر: ۰۲۶۳۴۰۲۶۳۰۰</p>
-<p>تلفن دفتر: ۰۲۶۳۴۰۲۶۴۰۰</p>
-<a class="btn" href="tel:09013430117">تماس با کارشناس</a>
-</section>
-<p style="text-align:center"><a href="index.html">بازگشت به صفحه اصلی هوران</a></p>
+
+<main>
+
+  <section class="content-section">
+    <div class="intro-box">
+      <div class="section-heading">
+        <h2>نگاه هوران به یک پروژه اداری</h2>
+      </div>
+      <p>
+        یک پروژه اداری فقط انتخاب میز و پارتیشن نیست.
+        اندازه‌های واقعی، موقعیت درها و ستون‌ها، ارتفاع و شکل سقف،
+        مسیر عبور تأسیسات، شرایط حمل تجهیزات و محدودیت‌های نصب،
+        همگی بر نتیجه نهایی اثر می‌گذارند. به همین دلیل، بررسی
+        اجرایی فضا و هماهنگی مراحل کار، بخش مهمی از خدمات هوران است.
+      </p>
+    </div>
+  </section>
+
+  <section class="content-section" id="services">
+    <div class="section-heading">
+      <h2>خدمات طراحی و تجهیز اداری</h2>
+      <p>
+        خدمات متناسب با نوع فضا، نیاز مجموعه و شرایط اجرایی هر پروژه
+        بررسی و برنامه‌ریزی می‌شود.
+      </p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="card-number">۰۱</div>
+        <h3>پارتیشن‌بندی اداری</h3>
+        <p>
+          برنامه‌ریزی جانمایی پارتیشن‌ها و بررسی ابعاد، مسیرهای عبور،
+          درها و شرایط اتصال به کف، دیوار و سقف.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-number">۰۲</div>
+        <h3>مبلمان اداری</h3>
+        <p>
+          بررسی نیازهای مجموعه برای میز مدیریت، میز کارشناسی،
+          میز جلسات، کانتر پذیرش و سایر تجهیزات اداری.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-number">۰۳</div>
+        <h3>بررسی و اندازه‌برداری</h3>
+        <p>
+          ثبت ابعاد و موانع موجود، موقعیت ستون‌ها، درها،
+          پنجره‌ها، پریزها، کف و سقف برای کاهش خطاهای اجرایی.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-number">۰۴</div>
+        <h3>نقشه و جزئیات اجرایی</h3>
+        <p>
+          آماده‌سازی اطلاعات و نقشه‌های موردنیاز پروژه،
+          متناسب با محدوده خدمات توافق‌شده.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-number">۰۵</div>
+        <h3>برآورد اقلام و ملزومات</h3>
+        <p>
+          بررسی مواد اولیه، یراق‌آلات و ملزومات نصب
+          بر اساس طرح و جزئیات اجرایی پروژه.
+        </p>
+      </article>
+
+      <article class="card">
+        <div class="card-number">۰۶</div>
+        <h3>هماهنگی اجرا و تحویل</h3>
+        <p>
+          هماهنگی مراحل اجرا، توجه به حفاظت از ساختمان،
+          کنترل موارد توافق‌شده و بررسی نهایی هنگام تحویل.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="content-section" id="process">
+    <div class="section-heading">
+      <h2>مراحل انجام کار در هوران</h2>
+      <p>
+        مسیر کار با شناخت دقیق پروژه آغاز می‌شود و با کنترل نهایی
+        و تحویل موارد توافق‌شده ادامه پیدا می‌کند.
+      </p>
+    </div>
+
+    <div class="process">
+      <div class="process-item">
+        <h3>۱. هماهنگی و شناخت اولیه</h3>
+        <p>
+          بررسی درخواست کارفرما، نوع فعالیت مجموعه، نیازهای کارکنان
+          و شرایط اولیه بازدید.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h3>۲. بازدید و اندازه‌برداری</h3>
+        <p>
+          برداشت ابعاد و ثبت ستون‌ها، بازشوها، تأسیسات،
+          ارتفاع سقف، کف، قرنیز و موانع موجود.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h3>۳. بررسی مسیر حمل و نصب</h3>
+        <p>
+          بررسی ورودی ساختمان، آسانسور، راه‌پله و مسیر انتقال
+          قطعات و تجهیزات تا محل اجرا.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h3>۴. تنظیم نقشه و اطلاعات پروژه</h3>
+        <p>
+          تبدیل اطلاعات برداشت‌شده به نقشه و مستندات موردنیاز
+          و بررسی آن‌ها با توجه به شرایط محل.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h3>۵. تأیید و برنامه‌ریزی اجرا</h3>
+        <p>
+          هماهنگی درباره طرح، ابعاد، رنگ و متریال،
+          اقلام موردنیاز و جزئیات مورد توافق پیش از اجرا.
+        </p>
+      </div>
+
+      <div class="process-item">
+        <h3>۶. اجرا و تحویل نهایی</h3>
+        <p>
+          هماهنگی اجرایی، توجه به کیفیت و ایمنی،
+          بررسی نتیجه کار و ثبت موارد توافق‌شده هنگام تحویل.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="special">
+      <h2>توجه به شرایط خاص هر فضا</h2>
+      <p>
+        در پروژه‌های اداری، همیشه با یک فضای ساده و چهارگوش روبه‌رو
+        نیستیم. سقف‌های شیب‌دار یا چندارتفاعی، پارتیشن‌های قوسی،
+        شکست‌های معماری، ستون‌ها و محدودیت‌های محل نصب ممکن است
+        به بررسی و جزئیات اجرایی بیشتری نیاز داشته باشند.
+        رویکرد هوران، شناسایی این شرایط پیش از اجرا و هماهنگی
+        راه‌حل مناسب با نیاز پروژه است.
+      </p>
+
+      <div class="tags">
+        <span class="tag">سقف‌های شیب‌دار</span>
+        <span class="tag">سقف‌های چندارتفاعی</span>
+        <span class="tag">پارتیشن‌های قوسی</span>
+        <span class="tag">فضاهای نامنظم</span>
+        <span class="tag">محدودیت‌های نصب</span>
+        <span class="tag">هماهنگی حمل تجهیزات</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>برای بررسی پروژه خود با هوران تماس بگیرید</h2>
+    <p>
+      برای هماهنگی مشاوره و بررسی نیازهای فضای اداری،
+      با دفتر هوران هنر ماندگار البرز در ارتباط باشید.
+    </p>
+
+    <div class="phone-list">
+      <a href="tel:02191694592">021-91694592</a>
+      <a href="tel:02634026300">026-34026300</a>
+      <a href="tel:02634026400">026-34026400</a>
+      <a href="tel:09013430117">0901-343-0117</a>
+    </div>
+
+    <a class="btn" href="tel:09013430117">تماس با کارشناس</a>
+    <a class="btn" href="index.html">مشاهده صفحه اصلی</a>
+  </section>
+
+  <div class="back-link">
+    <a href="index.html">← بازگشت به صفحه اصلی هوران</a>
+  </div>
+
 </main>
-<footer>هوران هنر ماندگار البرز | طراحی داخلی، پارتیشن و مبلمان اداری</footer>
+
+<footer>
+  هوران هنر ماندگار البرز
+  <br>
+  طراحی داخلی، پارتیشن و مبلمان اداری
+</footer>
+
 </body>
 </html>
 ```
