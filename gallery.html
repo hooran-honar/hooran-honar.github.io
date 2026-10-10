@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>گالری طراحی و مبلمان اداری | هوران هنر ماندگار البرز</title>
+<meta name="description" content="گالری ایده‌های طراحی سفارشی پارتیشن اداری، پارتیشن قوس‌دار، کانتر پذیرش، میز مدیریت، مبلمان و طراحی داخلی اداری در هوران هنر ماندگار البرز.">
+
+<style>
+*{box-sizing:border-box}
+:root{
+  --navy:#2f4156;
+  --teal:#567c8d;
+  --sky:#c8d9e6;
+  --beige:#f5efeb;
+  --white:#fff;
+  --text:#435361;
+  --border:#dce5e9;
+}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Tahoma,Arial,sans-serif;
+  background:var(--beige);
+  color:var(--navy);
+  line-height:2;
+}
+a{color:inherit}
+header{
+  background:var(--navy);
+  color:white;
+  padding:15px 5%;
+}
+.topbar{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+  flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{
+  width:60px;height:60px;object-fit:contain;
+  background:white;border-radius:10px;padding:4px;
+}
+.brand-name{font-weight:bold;font-size:16px}
+.brand-subtitle{font-size:12px;color:var(--sky)}
+nav{display:flex;gap:15px;flex-wrap:wrap}
+nav a{font-size:13px;text-decoration:none}
+nav a:hover{color:var(--sky)}
+.hero{
+  background:linear-gradient(135deg,#2f4156,#567c8d);
+  color:white;
+  padding:55px 6%;
+}
+.hero-inner{max-width:1050px;margin:auto}
+.eyebrow{color:var(--sky);font-size:13px;font-weight:bold}
+.hero h1{font-size:clamp(27px,4vw,42px);line-height:1.7;margin:12px 0}
+.hero p{font-size:15px;color:#edf3f6;max-width:800px}
+.btn{
+  display:inline-block;
+  text-decoration:none;
+  background:white;color:var(--navy);
+  border-radius:9px;padding:10px 18px;
+  font-weight:bold;font-size:13px;margin:7px 5px 0 0;
+}
+main{max-width:1200px;margin:auto;padding:20px}
+.notice{
+  background:white;border:1px solid var(--border);
+  border-radius:14px;padding:18px 22px;
+  margin:15px 0 25px;color:var(--text);font-size:13px;
+}
+.category-nav{
+  display:flex;flex-wrap:wrap;gap:9px;
+  justify-content:center;margin:20px 0 35px;
+}
+.category-nav a{
+  text-decoration:none;background:white;
+  border:1px solid var(--border);border-radius:30px;
+  padding:7px 13px;font-size:12px;
+}
+.category-nav a:hover{background:var(--navy);color:white}
+.gallery-section{padding:28px 0;scroll-margin-top:15px}
+.section-head{text-align:center;margin-bottom:20px}
+.section-head h2{color:var(--teal);font-size:23px;margin:0 0 7px}
+.section-head p{color:var(--text);font-size:13px;max-width:800px;margin:auto}
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:17px;
+}
+.photo-card{
+  background:white;border:1px solid var(--border);
+  border-radius:14px;overflow:hidden;
+  box-shadow:0 5px 17px #2f41560b;
+}
+.photo-card img{
+  display:block;width:100%;height:235px;
+  object-fit:cover;background:#e4edf1;
+}
+.photo-caption{padding:13px 15px}
+.photo-caption h3{font-size:15px;margin:0 0 4px}
+.photo-caption p{font-size:12px;color:var(--text);margin:0}
+.contact{
+  background:var(--navy);color:white;
+  text-align:center;border-radius:18px;
+  padding:30px 20px;margin:35px 0 20px;
+  scroll-margin-top:20px;
+}
+.contact p{font-size:13px;color:#e5edf2}
+.phones{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:18px 0}
+.phones a{
+  direction:ltr;text-decoration:none;color:white;
+  border:1px solid #ffffff70;border-radius:8px;
+  padding:7px 12px;font-size:13px;
+}
+.contact .btn{margin:5px}
+.back{text-align:center;margin:22px}
+.back a{color:var(--teal);font-weight:bold;text-decoration:none}
+footer{background:#243447;color:#dce5eb;text-align:center;padding:20px;font-size:12px}
+@media(max-width:850px){
+  .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .photo-card img{height:220px}
+}
+@media(max-width:540px){
+  .topbar,.brand{justify-content:center}
+  .brand{width:100%}
+  nav{justify-content:center;gap:12px}
+  .hero{padding:35px 6%}
+  main{padding:12px}
+  .gallery{grid-template-columns:1fr}
+  .photo-card img{height:auto;max-height:360px;aspect-ratio:4/3}
+  .section-head h2{font-size:20px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="topbar">
+    <div class="brand">
+      <img src="IMG_20260822_034356_286.jpg" alt="لوگوی هوران هنر ماندگار البرز">
+      <div>
+        <div class="brand-name">هوران هنر ماندگار البرز</div>
+        <div class="brand-subtitle">طراحی سفارشی، پارتیشن و مبلمان اداری</div>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">صفحه اصلی</a>
+      <a href="design.html">خدمات طراحی</a>
+      <a href="#partitions">پارتیشن‌ها</a>
+      <a href="#furniture">مبلمان اداری</a>
+      <a href="#contact">تماس</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">گالری ایده‌ها و طراحی‌های سفارشی</div>
+    <h1>طرح‌های خاص را فقط تماشا نکنید؛ آن‌ها را به واقعیت تبدیل کنید.</h1>
+    <p>
+      در هوران هنر ماندگار البرز، ایده‌های متفاوت برای فضاهای اداری
+      بررسی می‌شوند تا با توجه به ابعاد واقعی، نیاز مجموعه و شرایط
+      اجرایی، مسیر طراحی و ساخت سفارشی آن‌ها مشخص شود.
+      از پارتیشن‌های قوس‌دار و هندسه‌های پیچیده تا کانتر پذیرش،
+      میز مدیریت، مبلمان و طراحی داخلی.
+    </p>
+    <a class="btn" href="#gallery-start">مشاهده گالری</a>
+    <a class="btn" href="#contact">درخواست بررسی طرح</a>
+  </div>
+</section>
+
+<main id="gallery-start">
+
+  <div class="notice">
+    <strong>درباره این گالری:</strong>
+    تصاویر این صفحه برای نمایش نمونه‌های الهام‌بخش و ایده‌های
+    قابل سفارش گردآوری شده‌اند. امکان ساخت و اجرای هر طرح باید
+    با توجه به ابعاد، متریال، بودجه و شرایط محل پروژه بررسی شود.
+  </div>
+
+  <div class="category-nav">
+    <a href="#partitions">پارتیشن‌های خاص</a>
+    <a href="#reception">کانتر پذیرش</a>
+    <a href="#executive">میز مدیریت</a>
+    <a href="#workstations">میزهای کارگروهی</a>
+    <a href="#conference">اتاق کنفرانس</a>
+    <a href="#cabinets">کمد و فایل</a>
+    <a href="#sofas">مبلمان اداری</a>
+    <a href="#curtains">پرده اداری</a>
+    <a href="#interior">طراحی داخلی</a>
+  </div>
+
+  <!-- پارتیشن‌ها -->
+  <section class="gallery-section" id="partitions">
+    <div class="section-head">
+      <h2>پارتیشن‌های قوس‌دار، بلند و هندسه‌های خاص</h2>
+      <p>
+        طراحی پارتیشن برای فضاهای غیرمتعارف، قوس‌ها، شکست‌های معماری
+        و ارتفاع‌های متفاوت؛ با توجه به امکان ساخت و جزئیات نصب.
+      </p>
+    </div>
+    <div class="gallery">
+      <article class="photo-card"><img src="partition-curved-01.jpg.jpg" alt="نمونه پارتیشن قوس‌دار ۱" loading="lazy"><div class="photo-caption"><h3>پارتیشن قوس‌دار</h3><p>ایده‌ای برای تقسیم‌بندی نرم و متفاوت فضا</p></div></article>
+      <article class="photo-card"><img src="partition-curved-02.jpg.jpg" alt="نمونه پارتیشن قوس‌دار ۲" loading="lazy"><div class="photo-caption"><h3>پارتیشن منحنی</h3><p>طرح سفارشی متناسب با معماری داخلی</p></div></article>
+      <article class="photo-card"><img src="partition-curved-03.jpg.jpg" alt="نمونه پارتیشن قوس‌دار ۳" loading="lazy"><div class="photo-caption"><h3>تقسیم‌بندی منحنی</h3><p>بررسی هندسه و مسیر اجرای قوس</p></div></article>
+      <article class="photo-card"><img src="partition-curved-04.jpg.jpg" alt="نمونه پارتیشن قوس‌دار ۴" loading="lazy"><div class="photo-caption"><h3>پارتیشن با فرم خاص</h3><p>راهکاری برای فضاهای متفاوت اداری</p></div></article>
+      <article class="photo-card"><img src="partition-curved-05.jpg.jpg" alt="نمونه پارتیشن قوس‌دار ۵" loading="lazy"><div class="photo-caption"><h3>پارتیشن سفارشی</h3><p>قابل بررسی بر اساس ابعاد پروژه</p></div></article>
+      <article class="photo-card"><img src="partition-curved-06.jpg.jpg" alt="نمونه پارتیشن قوس‌دار ۶" loading="lazy"><div class="photo-caption"><h3>هندسه منحنی</h3><p>توجه به جزئیات طراحی و اتصال</p></div></article>
+      <article class="photo-card"><img src="partition-curved-07.jpg.jpg" alt="نمونه پارتیشن قوس‌دار ۷" loading="lazy"><div class="photo-caption"><h3>ایده پارتیشن قوسی</h3><p>طرح قابل بررسی برای سفارش اختصاصی</p></div></article>
+      <article class="photo-card"><img src="partition-angular-01.jpg.jpg" alt="نمونه پارتیشن زاویه‌دار ۱" loading="lazy"><div class="photo-caption"><h3>پارتیشن زاویه‌دار</h3><p>هماهنگی با شکست‌های معماری</p></div></article>
+      <article class="photo-card"><img src="partition-angular-02.jpg.jpg" alt="نمونه پارتیشن زاویه‌دار ۲" loading="lazy"><div class="photo-caption"><h3>فرم‌های هندسی خاص</h3><p>طراحی متناسب با پلان فضا</p></div></article>
+      <article class="photo-card"><img src="partition-angular-03.jpg.jpg" alt="نمونه پارتیشن زاویه‌دار ۳" loading="lazy"><div class="photo-caption"><h3>تقسیم‌بندی زاویه‌دار</h3><p>بررسی مسیر نصب و اتصال</p></div></article>
+      <article class="photo-card"><img src="partition-angular-04.jpg.jpg" alt="نمونه پارتیشن زاویه‌دار ۴" loading="lazy"><div class="photo-caption"><h3>پارتیشن با شکست</h3><p>راهکار برای فضاهای نامنظم</p></div></article>
+      <article class="photo-card"><img src="partition-angular-05.jpg.jpg" alt="نمونه پارتیشن زاویه‌دار ۵" loading="lazy"><div class="photo-caption"><h3>طرح هندسی سفارشی</h3><p>نیازمند بررسی ابعاد و جزئیات اجرایی</p></div></article>
+      <article class="photo-card"><img src="partition-complex-geometry-01.jpg.jpg" alt="نمونه پارتیشن با هندسه پیچیده ۱" loading="lazy"><div class="photo-caption"><h3>هندسه پیچیده</h3><p>تبدیل فرم معماری به جزئیات قابل بررسی</p></div></article>
+      <article class="photo-card"><img src="partition-complex-geometry-02.jpg.jpg" alt="نمونه پارتیشن با هندسه پیچیده ۲" loading="lazy"><div class="photo-caption"><h3>پارتیشن غیرمتعارف</h3><p>طراحی بر اساس شرایط واقعی محل</p></div></article>
+      <article class="photo-card"><img src="partition-tall-01.jpg.jpg" alt="نمونه پارتیشن بلند ۱" loading="lazy"><div class="photo-caption"><h3>پارتیشن بلند</h3><p>توجه به ارتفاع و پایداری سازه</p></div></article>
+      <article class="photo-card"><img src="partition-tall-02.jpg.jpg" alt="نمونه پارتیشن بلند ۲" loading="lazy"><div class="photo-caption"><h3>پارتیشن با ارتفاع خاص</h3><p>بررسی سقف و روش اتصال</p></div></article>
+      <article class="photo-card"><img src="partition-tall-03.jpg.jpg" alt="نمونه پارتیشن بلند ۳" loading="lazy"><div class="photo-caption"><h3>تقسیم‌بندی مرتفع</h3><p>نیازمند اندازه‌برداری دقیق</p></div></article>
+      <article class="photo-card"><img src="partition-tall-04.jpg.jpg" alt="نمونه پارتیشن بلند ۴" loading="lazy"><div class="photo-caption"><h3>پارتیشن تا ارتفاع سقف</h3><p>هماهنگی با شرایط معماری</p></div></article>
+      <article class="photo-card"><img src="partition-tall-05.jpg.jpg" alt="نمونه پارتیشن بلند ۵" loading="lazy"><div class="photo-caption"><h3>طرح مرتفع سفارشی</h3><p>بررسی حمل قطعات و نصب</p></div></article>
+      <article class="photo-card"><img src="partition-tall-06.jpg.jpg" alt="نمونه پارتیشن بلند ۶" loading="lazy"><div class="photo-caption"><h3>پارتیشن با ابعاد ویژه</h3><p>طراحی متناسب با پروژه</p></div></article>
+    </div>
+  </section>
+
+  <!-- کانتر پذیرش -->
+  <section class="gallery-section" id="reception">
+    <div class="section-head">
+      <h2>کانتر پذیرش و پیشخوان‌های سفارشی</h2>
+      <p>طراحی کانتر متناسب با هویت مجموعه، فضای ورودی، مسیر مراجعه‌کنندگان و نیازهای کاری.</p>
+    </div>
+    <div class="gallery">
+      <article class="photo-card"><img src="reception-curved-01.jpg.jpg" alt="کانتر پذیرش منحنی ۱" loading="lazy"><div class="photo-caption"><h3>کانتر پذیرش منحنی</h3><p>فرم نرم برای ورودی‌های شاخص</p></div></article>
+      <article class="photo-card"><img src="reception-curved-02.jpg.jpg" alt="کانتر پذیرش منحنی ۲" loading="lazy"><div class="photo-caption"><h3>پیشخوان قوس‌دار</h3><p>قابل بررسی برای ساخت سفارشی</p></div></article>
+      <article class="photo-card"><img src="reception-custom.jpg.jpg" alt="کانتر پذیرش سفارشی" loading="lazy"><div class="photo-caption"><h3>کانتر پذیرش خاص</h3><p>تناسب فرم، ابعاد و کاربری</p></div></article>
+    </div>
+  </section>
+
+  <!-- میز مدیریت -->
+  <section class="gallery-section" id="executive">
+    <div class="section-head">
+      <h2>میز مدیریت و مبلمان مدیریتی خاص</h2>
+      <p>ایده‌هایی برای میز مدیریت مدرن، سفارشی و هماهنگ با فضای اتاق مدیریت.</p>
+    </div>
+    <div class="gallery">
+      <article class="photo-card"><img src="executive-desk-modern-01.jpg.jpg" alt="میز مدیریت مدرن ۱" loading="lazy"><div class="photo-caption"><h3>میز مدیریت مدرن</h3><p>طراحی متناسب با فضای کار</p></div></article>
+      <article class="photo-card"><img src="executive-desk-modern-02.jpg.jpg" alt="میز مدیریت مدرن ۲" loading="lazy"><div class="photo-caption"><h3>میز مدیریتی معاصر</h3><p>توجه به فرم و کاربری</p></div></article>
+      <article class="photo-card"><img src="executive-desk-modern-03.jpg.jpg" alt="میز مدیریت مدرن ۳" loading="lazy"><div class="photo-caption"><h3>میز مدیریت سفارشی</h3><p>قابل طراحی بر اساس نیاز</p></div></article>
+      <article class="photo-card"><img src="executive-desk-modern-04.jpg.jpg" alt="میز مدیریت مدرن ۴" loading="lazy"><div class="photo-caption"><h3>میز مدیریت خاص</h3><p>هماهنگی با دکوراسیون اتاق</p></div></article>
+      <article class="photo-card"><img src="executive-desk-modern-05.jpg.jpg" alt="میز مدیریت مدرن ۵" loading="lazy"><div class="photo-caption"><h3>میز مدیریتی کاربردی</h3><p>بررسی ابعاد و فضای ذخیره‌سازی</p></div></article>
+      <article class="photo-card"><img src="executive-desk-modern-06.jpg.jpg" alt="میز مدیریت مدرن ۶" loading="lazy"><div class="photo-caption"><h3>فرم متفاوت میز مدیریت</h3><p>ایده‌ای برای طراحی اختصاصی</p></div></article>
+      <article class="photo-card"><img src="executive-desk-modern-07.jpg.jpg" alt="میز مدیریت مدرن ۷" loading="lazy"><div class="photo-caption"><h3>میز مدیریت معاصر</h3><p>طراحی متناسب با فضا و نیاز</p></div></article>
+    </div>
+  </section>
+
+  <!-- میزهای کارگروهی -->
+  <section class="gallery-section" id="workstations">
+    <div class="section-head">
+      <h2>میزهای کارگروهی و ایستگاه‌های کاری</h2>
+      <p>برنامه‌ریزی چیدمان میزها با توجه به تعداد کارکنان، مسیرهای عبور، دسترسی‌ها و نظم محیط کار.</p>
+    </div>
+    <div class="gallery">
+      <article class="photo-card"><img src="office-workstations-01.jpg.jpg" alt="ایستگاه کاری اداری ۱" loading="lazy"><div class="photo-caption"><h3>ایستگاه کاری مدرن</h3><p>برای استفاده بهینه از فضای اداری</p></div></article>
+      <article class="photo-card"><img src="office-workstations-02.jpg.jpg" alt="ایستگاه کاری اداری ۲" loading="lazy"><div class="photo-caption"><h3>میزهای کار گروهی</h3><p>هماهنگی با تعداد کاربران</p></div></article>
+      <article class="photo-card"><img src="office-workstations-03.jpg.jpg" alt="ایستگاه کاری اداری ۳" loading="lazy"><div class="photo-caption"><h3>چیدمان کارشناسی</h3><p>توجه به فضای شخصی و گردش کار</p></div></article>
+      <article class="photo-card"><img src="office-workstations-04.jpg.jpg" alt="ایستگاه کاری اداری ۴" loading="lazy"><div class="photo-caption"><h3>میز گروهی سفارشی</h3><p>قابل بررسی براساس پلان مجموعه</p></div></article>
+      <article class="photo-card"><img src="office-workstations-05.jpg.jpg" alt="ایستگاه کاری اداری ۵" loading="lazy"><div class="photo-caption"><h3>فضای کاری یکپارچه</h3><p>برنامه‌ریزی میزها و دسترسی‌ها</p></div></article>
+    </div>
+  </section>
+
+  <!-- اتاق کنفرانس -->
+  <section class="gallery-section" id="conference">
+    <div class="section-head">
+      <h2>میز و اتاق کنفرانس</h2>
+      <p>ایده‌های طراحی میز جلسه و فضای کنفرانس متناسب با ظرفیت، تجهیزات و سبک مجموعه.</p>
+    </div>
+    <div class="gallery">
+      <article class="photo-card"><img src="conference-room-modern-01.jpg.jpg" alt="اتاق کنفرانس مدرن ۱" loading="lazy"><div class="photo-caption"><h3>اتاق کنفرانس مدرن</h3><p>هماهنگی میز، صندلی و فضای جلسه</p></div></article>
+      <article class="photo-card"><img src="conference-room-modern-02.jpg.jpg" alt="اتاق کنفرانس مدرن ۲" loading="lazy"><div class="photo-caption"><h3>فضای جلسات اداری</h3><p>توجه به چیدمان و رفت‌وآمد</p></div></article>
+      <article class="photo-card"><img src="conference-room-modern-03.jpg.jpg" alt="اتاق کنفرانس مدرن ۳" loading="lazy"><div class="photo-caption"><h3>اتاق جلسه معاصر</h3><p>هماهنگی با نیازهای سازمان</p></div></article>
+      <article class="photo-card"><img src="conference-room-modern-04.jpg.jpg" alt="اتاق کنفرانس مدرن ۴" loading="lazy"><div class="photo-caption"><h3>طراحی فضای کنفرانس</h3><p>بررسی ظرفیت و تجهیزات</p></div></article>
+      <article class="photo-card"><img src="conference-table-custom-01.jpg.jpg" alt="میز کنفرانس سفارشی ۱" loading="lazy"><div class="photo-caption"><h3>میز کنفرانس سفارشی</h3><p>ابعاد متناسب با فضای جلسه</p></div></article>
+      <article class="photo-card"><img src="conference-table-custom-02.jpg.jpg" alt="میز کنفرانس سفارشی ۲" loading="lazy"><div class="photo-caption"><h3>میز جلسه اختصاصی</h3><p>بررسی فرم و دسترسی‌ها</p></div></article>
+      <article class="photo-card"><img src="conference-table-custom-03.jpg.jpg" alt="میز کنفرانس سفارشی ۳" loading="lazy"><div class="photo-caption"><h3>میز کنفرانس خاص</h3><p>قابل بررسی برای ساخت سفارشی</p></div></article>
+      <article class="photo-card"><img src="conference-table-oval-01.jpg.jpg" alt="میز کنفرانس بیضی" loading="lazy"><div class="photo-caption"><h3>میز کنفرانس بیضی</h3><p>فرمی برای تعامل بهتر در جلسات</p></div></article>
+    </div>
+  </section>
+
+  <!-- کمد و فایل -->
+  <section class="gallery-section" id="cabinets">
+    <div class="section-head">
+      <h2>کمد، فایل و ذخیره‌سازی اداری</h2>
+      <p>راهکارهای ذخیره‌سازی اسناد و وسایل، با توجه به فضای موجود و نیازهای کاری.</p>
+    </div>
+    <div class="gallery">
+      <article class="photo-card"><img src="cabinet-office-modern-01.jpg.jpg" alt="کمد اداری مدرن ۱" loading="lazy"><div class="photo-caption"><h3>کمد اداری مدرن</h3><p>نظم‌دهی و استفاده بهتر از فضا</p></div></article>
+      <article class="photo-card"><img src="cabinet-office-modern-02.jpg.jpg" alt="کمد اداری مدرن ۲" loading="lazy"><div class="photo-caption"><h3>کمد ذخیره‌سازی</h3><p>متناسب با نیاز مجموعه</p></div></article>
+      <article class="photo-card"><img src="cabinet-office-modern-03.jpg.jpg" alt="کمد اداری مدرن ۳" loading="lazy"><div class="photo-caption"><h3>کمد با طراحی معاصر</h3><p>هماهنگی ظاهر و کاربری</p></div></article>
+      <article class="photo-card"><img src="cabinet-office-modern-04.jpg.jpg" alt="کمد اداری مدرن ۴" loading="lazy"><div class="photo-caption"><h3>ذخیره‌سازی اداری</h3><p>بررسی ابعاد و محل قرارگیری</p></div></article>
+      <article class="photo-card"><img src="cabinet-office-modern-05.jpg.jpg" alt="کمد اداری مدرن ۵" loading="lazy"><div class="photo-caption"><h3>کمد سفارشی</h3><p>طراحی متناسب با فضای دفتر</p></div></article>
+    </div>
+  </section>
+
+  <!-- مبلمان -->
+  <section class="gallery-section" id="sofas">
+    <div class="section-head">
+      <h2>مبلمان اداری، مبل مدیریتی و فضای انتظار</h2>
+      <p>ایده‌هایی برای مبلمان اتاق مدیریت، فضای انتظار و بخش پذیرش.</p>
+    </div>
+    <div class="gallery">
+      <article class="photo-card"><img src="sofa-office-modern-01.jpg.jpg" alt="مبل اداری مدرن" loading="lazy"><div class="photo-caption"><h3>مبل اداری مدرن</h3><p>مناسب فضاهای اداری معاصر</p></div></article>
+      <article class="photo-card"><img src="sofa-executive-leather-01.jpg.jpg" alt="مبل مدیریتی چرمی" loading="lazy"><div class="photo-caption"><h3>مبل مدیریتی چرمی</h3><p>ایده‌ای برای اتاق مدیریت</p></div></article>
+      <article class="photo-card"><img src="sofa-sculptural-01.jpg.jpg" alt="مبلمان با فرم خاص ۱" loading="lazy"><div class="photo-caption"><h3>مبلمان با فرم خاص</h3><p>برای فضاهای شاخص و متفاوت</p></div></article>
+      <article class="photo-card"><img src="sofa-sculptural-02.jpg.jpg" alt="مبلمان با فرم خاص ۲" loading="lazy"><div class="photo-caption"><h3>مبلمان طراحی‌محور</h3><p>ایده‌ای برای سفارش اختصاصی</p></div></article>
+      <article class="photo-card"><img src="sofa-sculptural-03.jpg.jpg" alt="مبلمان با فرم خاص ۳" loading="lazy"><div class="photo-caption"><h3>مبل با طراحی متفاوت</h3><p>تناسب فرم و فضای داخلی</p></div></article>
+      <article class="photo-card"><img src="sofa-sculptural-04.jpg.jpg" alt="مبلمان با فرم خاص ۴" loading="lazy"><div class="photo-caption"><h3>مبلمان خاص</h3><p>بررسی امکان سفارش بر اساس طرح</p></div></article>
+    </div>
+  </section>
+
+  <!-- پرده -->
+  <section class="gallery-section" id="curtains">
+    <div class="section-head">
+      <h2>پرده‌های اداری</h2>
+      <p>انتخاب پرده با توجه به نور، حریم خصوصی، کاربری اتاق و هماهنگی با دکوراسیون.</p>
+    </div>
+    <div class="gallery">
+      <article class="photo-card"><img src="curtain-office-modern-01.jpg.jpg" alt="پرده اداری مدرن ۱" loading="lazy"><div class="photo-caption"><h3>پرده اداری مدرن</h3><p>هماهنگی با فضای کاری</p></div></article>
+      <article class="photo-card"><img src="curtain-office-modern-02.jpg.jpg" alt="پرده اداری مدرن ۲" loading="lazy"><div class="photo-caption"><h3>پرده برای اتاق اداری</h3><p>تنظیم نور و حفظ حریم</p></div></article>
+      <article class="photo-card"><img src="curtain-office-modern-03.jpg.jpg" alt="پرده اداری مدرن ۳" loading="lazy"><div class="photo-caption"><h3>پرده هماهنگ با دکور</h3><p>انتخاب متناسب با فضا</p></div></article>
+      <article class="photo-card"><img src="curtain-office-modern-04.jpg.jpg" alt="پرده اداری مدرن ۴" loading="lazy"><div class="photo-caption"><h3>پرده اداری سفارشی</h3><p>بررسی ابعاد و نوع پنجره</p></div></article>
+    </div>
+  </section>
+
+  <!-- طراحی داخلی -->
+  <section class="gallery-section" id="interior">
+    <div class="section-head">
+      <h2>طراحی داخلی فضاهای اداری</h2>
+      <p>هماهنگی چیدمان، پارتیشن، مبلمان و عناصر داخلی بر اساس کاربری و شرایط واقعی فضا.</p>
+    </div>
+    <div class="gallery">
+      <article class="photo-card"><img src="interior-modern-office-01.jpg.jpg" alt="طراحی داخلی دفتر مدرن ۱" loading="lazy"><div class="photo-caption"><h3>طراحی داخلی دفتر مدرن</h3><p>چیدمان هماهنگ فضای اداری</p></div></article>
+      <article class="photo-card"><img src="interior-modern-office-02.jpg.jpg" alt="طراحی داخلی دفتر مدرن ۲" loading="lazy"><div class="photo-caption"><h3>فضای کاری معاصر</h3><p>هماهنگی عناصر داخلی و مبلمان</p></div></article>
+      <article class="photo-card"><img src="interior-modern-office-03.jpg.jpg" alt="طراحی داخلی دفتر مدرن ۳" loading="lazy"><div class="photo-caption"><h3>ایده طراحی اداری</h3><p>قابل بررسی متناسب با نیاز پروژه</p></div></article>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>طرح موردنظر خود را با هوران بررسی کنید</h2>
+    <p>
+      اگر طرح خاصی دیده‌اید یا برای فضای اداری خود به راهکاری متفاوت
+      نیاز دارید، برای بررسی اولیه و هماهنگی با هوران تماس بگیرید.
+    </p>
+    <div class="phones">
+      <a href="tel:02191694592">021-91694592</a>
+      <a href="tel:02634026300">026-34026300</a>
+      <a href="tel:02634026400">026-34026400</a>
+      <a href="tel:09013430117">0901-343-0117</a>
+    </div>
+    <a class="btn" href="tel:09013430117">تماس با کارشناس</a>
+    <a class="btn" href="design.html">مشاهده خدمات طراحی</a>
+  </section>
+
+  <div class="back">
+    <a href="index.html">← بازگشت به صفحه اصلی هوران</a>
+  </div>
+</main>
+
+<footer>
+  هوران هنر ماندگار البرز
+  <br>
+  طراحی داخلی، پارتیشن و مبلمان اداری
+</footer>
+
+</body>
+</html>
