@@ -5,158 +5,166 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>هوران هنر ماندگار البرز | صفحه اصلی</title>
-<meta name="description" content="هوران هنر ماندگار البرز؛ ارائه خدمات طراحی داخلی، پارتیشن و مبلمان اداری و تأمین تسمه‌های کولر آبی، صنعتی و کشاورزی.">
+<title>هوران هنر ماندگار البرز | طراحی اداری و تسمه</title>
+<meta name="description" content="هوران هنر ماندگار البرز؛ طراحی و تجهیز فضاهای اداری، پارتیشن، مبلمان اداری و تسمه‌های کولر آبی، صنعتی و کشاورزی.">
 
 <style>
 *{box-sizing:border-box}
-
+html{scroll-behavior:smooth}
 body{
   margin:0;
   font-family:Tahoma,Arial,sans-serif;
   background:#f5efeb;
   color:#2f4156;
+  line-height:1.9;
 }
-
 header{
-  text-align:center;
-  padding:25px 15px 18px;
   background:#2f4156;
   color:white;
+  text-align:center;
+  padding:24px 15px;
 }
-
 .logo{
-  width:90px;
-  height:90px;
+  width:88px;height:88px;
   object-fit:contain;
   background:white;
   padding:5px;
   border-radius:14px;
 }
-
-header h1{
-  font-size:25px;
-  margin:10px 0 4px;
+header h1{font-size:25px;margin:8px 0 0}
+header p{margin:2px 0;color:#dce7ee;font-size:14px}
+nav{
+  background:white;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px 24px;
+  padding:12px;
+  box-shadow:0 3px 12px #2f415610;
 }
-
-header p{
-  margin:0;
-  color:#dce7ee;
-  font-size:14px;
-}
-
+nav a{color:#2f4156;text-decoration:none;font-size:14px;font-weight:bold}
+nav a:hover{color:#567c8d}
 .intro{
   text-align:center;
-  padding:25px 15px 15px;
+  padding:34px 18px 20px;
 }
-
-.intro h2{
-  font-size:23px;
-  margin:0 0 8px;
-}
-
-.intro p{
-  color:#647786;
-  margin:0;
-}
-
+.intro h2{font-size:27px;margin:0 0 8px}
+.intro p{max-width:760px;margin:auto;color:#647786}
 .sections{
-  max-width:1100px;
-  margin:10px auto 35px;
+  max-width:1150px;
+  margin:8px auto 40px;
   padding:15px;
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:22px;
+  gap:24px;
 }
-
 .card{
-  display:block;
   position:relative;
+  display:block;
+  min-width:0;
+  height:420px;
   overflow:hidden;
-  min-height:390px;
   border-radius:20px;
+  background:#567c8d;
+  box-shadow:0 9px 28px #2f415620;
   text-decoration:none;
   color:white;
-  background:#567c8d;
-  box-shadow:0 8px 25px #2f415620;
-  transition:transform .2s,box-shadow .2s;
 }
-
-.card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 12px 30px #2f415630;
-}
-
 .card img{
   width:100%;
-  height:390px;
+  height:100%;
   object-fit:cover;
   display:block;
-  transition:transform .3s;
+  transition:transform .35s;
 }
-
-.card:hover img{
-  transform:scale(1.04);
-}
-
+.card:hover img{transform:scale(1.04)}
 .overlay{
   position:absolute;
   inset:0;
   display:flex;
   flex-direction:column;
   justify-content:flex-end;
-  padding:25px;
-  background:linear-gradient(
-    to top,
-    rgba(21,37,51,.94),
-    rgba(21,37,51,.35) 48%,
-    rgba(21,37,51,0) 100%
-  );
+  align-items:flex-start;
+  padding:26px;
+  background:linear-gradient(to top,rgba(21,37,51,.96),rgba(21,37,51,.48) 48%,transparent);
 }
-
-.overlay h3{
-  font-size:24px;
-  margin:0 0 8px;
-}
-
-.overlay p{
-  font-size:14px;
-  line-height:2;
-  margin:0 0 15px;
-  color:#f1f5f7;
-}
-
+.overlay h3{font-size:25px;margin:0 0 8px}
+.overlay p{font-size:14px;line-height:2;margin:0 0 15px;color:#f1f5f7}
 .enter{
   display:inline-block;
-  align-self:flex-start;
   background:white;
   color:#2f4156;
   border-radius:8px;
-  padding:9px 17px;
+  padding:8px 17px;
   font-size:14px;
   font-weight:bold;
 }
-
+.about{
+  max-width:1000px;
+  margin:0 auto 35px;
+  padding:28px 24px;
+  text-align:center;
+  background:white;
+  border-radius:18px;
+  box-shadow:0 5px 20px #2f415610;
+}
+.about h2{margin:0 0 10px;font-size:23px}
+.about p{margin:0;color:#647786}
+.features{
+  max-width:1100px;
+  margin:0 auto 40px;
+  padding:0 15px;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+.feature{
+  background:white;
+  padding:20px 16px;
+  border-radius:14px;
+  text-align:center;
+}
+.feature h3{font-size:17px;margin:0 0 6px}
+.feature p{font-size:13px;color:#647786;margin:0}
+.contact{
+  background:#e2eaf0;
+  padding:28px 15px;
+  text-align:center;
+}
+.contact h2{margin:0 0 8px}
+.contact p{margin:5px 0}
+.phones{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:14px;
+}
+.phones a{
+  display:inline-block;
+  background:#2f4156;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  padding:9px 14px;
+  font-size:14px;
+}
 footer{
   background:#2f4156;
   color:#e5edf2;
   text-align:center;
   padding:20px 12px;
   font-size:13px;
-  line-height:2;
 }
-
-@media(max-width:650px){
+@media(max-width:700px){
   header h1{font-size:21px}
-  .intro h2{font-size:20px}
-  .sections{
-    grid-template-columns:1fr;
-    gap:18px;
-    padding:14px;
-  }
-  .card,.card img{height:310px;min-height:310px}
+  .intro h2{font-size:22px}
+  .sections{grid-template-columns:1fr;gap:18px;padding:14px}
+  .card{height:330px}
   .overlay{padding:20px}
   .overlay h3{font-size:22px}
+  .features{grid-template-columns:1fr}
+  .about{margin:0 14px 30px;padding:22px 18px}
 }
 </style>
 </head>
@@ -164,50 +172,83 @@ footer{
 <body>
 
 <header>
-  <img class="logo"
-       src="IMG_20260822_034356_286.jpg"
-       alt="لوگوی هوران هنر">
+  <img class="logo" src="IMG_20260822_034356_286.jpg" alt="لوگوی هوران هنر">
   <h1>هوران هنر ماندگار البرز</h1>
-  <p>دو تخصص، یک نام معتبر</p>
+  <p>دو حوزه تخصصی، یک نام معتبر</p>
 </header>
+
+<nav>
+  <a href="#sections">حوزه‌های فعالیت</a>
+  <a href="#about">درباره هوران</a>
+  <a href="#contact">تماس با ما</a>
+</nav>
 
 <section class="intro">
   <h2>به هوران خوش آمدید</h2>
-  <p>برای ورود به حوزه موردنظر خود، یکی از دو بخش زیر را انتخاب کنید.</p>
+  <p>برای آشنایی با خدمات تخصصی ما، حوزه موردنظر خود را انتخاب کنید.</p>
 </section>
 
-<main class="sections">
+<main class="sections" id="sections">
 
-  <a class="card" href="design.html"
-     aria-label="ورود به بخش طراحی و تجهیز اداری">
-    <img
-      src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=85"
-      alt="فضای مدرن اداری و طراحی داخلی">
+  <a class="card" href="design.html" aria-label="ورود به بخش طراحی و تجهیز اداری">
+    <img src="Design.JPG" alt="طراحی داخلی و مبلمان اداری" loading="eager">
     <div class="overlay">
-      <h3>طراحی و تجهیز اداری</h3>
-      <p>طراحی داخلی، پارتیشن اداری، مبلمان و اجرای پروژه‌های اداری</p>
-      <span class="enter">ورود به بخش طراحی ←</span>
+      <h3>طراحی و تجهیز فضاهای اداری</h3>
+      <p>طراحی داخلی، پارتیشن اداری، مبلمان اداری و برنامه‌ریزی اجرای پروژه‌ها.</p>
+      <span class="enter">مشاهده خدمات طراحی ←</span>
     </div>
   </a>
 
-  <a class="card" href="belts.html"
-     aria-label="ورود به بخش تسمه هوران">
-    <img
-      src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1000&q=85"
-      alt="تجهیزات و ماشین‌آلات صنعتی">
+  <a class="card" href="belts.html" aria-label="ورود به بخش تسمه هوران">
+    <img src="Belt.JPG" alt="تسمه‌های کولر آبی و صنعتی هوران" loading="eager">
     <div class="overlay">
       <h3>تسمه هوران</h3>
-      <p>تسمه کولر آبی، صنعتی و کشاورزی</p>
-      <span class="enter">ورود به بخش تسمه ←</span>
+      <p>تسمه‌های کولر آبی، صنعتی و کشاورزی؛ برای آشنایی با محصولات و دریافت اطلاعات بیشتر.</p>
+      <span class="enter">مشاهده بخش تسمه ←</span>
     </div>
   </a>
 
 </main>
 
+<section class="about" id="about">
+  <h2>درباره هوران هنر ماندگار البرز</h2>
+  <p>
+    هوران در دو حوزه تخصصی فعالیت می‌کند: طراحی و تجهیز فضاهای اداری،
+    و تأمین تسمه‌های کولر آبی، صنعتی و کشاورزی.
+    برای مشاهده جزئیات هر حوزه، وارد بخش اختصاصی آن شوید.
+  </p>
+</section>
+
+<section class="features">
+  <div class="feature">
+    <h3>طراحی و برنامه‌ریزی</h3>
+    <p>توجه به نیازهای فضا و جزئیات اجرایی در پروژه‌های اداری.</p>
+  </div>
+  <div class="feature">
+    <h3>دو بخش تخصصی مستقل</h3>
+    <p>دسترسی جداگانه به خدمات اداری و محصولات تسمه.</p>
+  </div>
+  <div class="feature">
+    <h3>ارتباط مستقیم</h3>
+    <p>تماس با شرکت برای دریافت اطلاعات و پیگیری درخواست‌ها.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>ارتباط با هوران</h2>
+  <p>برای کسب اطلاعات بیشتر با ما تماس بگیرید.</p>
+  <div class="phones">
+    <a href="tel:02191694592">۰۲۱۹۱۶۹۴۵۹۲</a>
+    <a href="tel:02634026300">۰۲۶۳۴۰۲۶۳۰۰</a>
+    <a href="tel:02634026400">۰۲۶۳۴۰۲۶۴۰۰</a>
+    <a href="tel:09013430117">۰۹۰۱۳۴۳۰۱۱۷</a>
+  </div>
+</section>
+
 <footer>
   هوران هنر ماندگار البرز
   <br>
-  طراحی داخلی، مبلمان اداری، پارتیشن و تسمه‌های صنعتی
+  طراحی داخلی، مبلمان اداری، پارتیشن و تسمه‌های صنعتی و کشاورزی
 </footer>
 
 </body>
